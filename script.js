@@ -1,28 +1,6 @@
-class Rectangle {
-  constructor(width, height) {
-    this._width = width;
-    this._height = height;
-  }
-  
-  get width() {
-    return this._width;
-  }
-  
-  get height() {
-    return this._height;
-  }
-  
-  getArea() {
-    return this._width * this._height;
-  }
-}
-
-class Square extends Rectangle {
-  constructor(sideLength) {
-    super(sideLength, sideLength);
-  }
-  
-  getPerimeter() {
-    return 4 * this.width; // or 4 * this.height since they are equal
-  }
-}
+const rect = new Rectangle(5, 10);
+    console.log('Rectangle area:', rect.getArea()); // should output "Rectangle area: 50"
+    
+    const sq = new Square(7);
+    console.log('Square area:', sq.getArea()); // should output "Square area: 49"
+    console.log('Square perimeter:', sq.getPerimeter());
