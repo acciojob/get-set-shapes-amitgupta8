@@ -1,6 +1,10 @@
-const rect = new Rectangle(5, 10);
-    console.log('Rectangle area:', rect.getArea()); // should output "Rectangle area: 50"
-    
-    const sq = new Square(7);
-    console.log('Square area:', sq.getArea()); // should output "Square area: 49"
-    console.log('Square perimeter:', sq.getPerimeter());
+const rectangle = new Rectangle(5, 10);
+console.log(rectangle.width); // Output: 5
+console.log(rectangle.height); // Output: 10
+console.log(rectangle.getArea()); // Output: 50
+
+const square = new Square(6);
+console.log(square.width); // Output: 6
+console.log(square.height); // Output: 6
+console.log(square.getArea()); // Output: 36
+console.log(square.getPerimeter()); // Output: 24
